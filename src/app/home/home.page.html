@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Barberia
+    <ion-title size="medium"><h5><strong>Barberia</strong></h5>>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/login']">
@@ -14,8 +13,9 @@
 <ion-content [fullscreen]="true">
   <ion-content class="ion-padding">Presiona el menu de tu izquierda</ion-content>
 </ion-content>
-<!-- <ion-header collapse="condense">
-  <ion-toolbar>
-    <ion-title size="large">Barberia</ion-title>
-  </ion-toolbar>
-</ion-header>
+
+<style>
+  ion-title{
+    margin-top: 25px;
+  }
+</style>
