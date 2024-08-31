@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Barberia
+    <ion-title size="medium"><h5><strong>Barberia</strong></h5>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/login']">
@@ -17,6 +16,11 @@
   </mat-slider>
 
 </ion-content>
+<style>
+  ion-title{
+    margin-top: 7px;
+  }
+</style>
 <!-- <ion-header collapse="condense">
   <ion-toolbar>
     <ion-title size="large">Barberia</ion-title>

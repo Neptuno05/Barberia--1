@@ -1,13 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true"> 
 </ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="false">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Login</ion-title>
+      <ion-title size="medium"><h5><strong>Login</strong></h5>
+      </ion-title>
     </ion-toolbar>
   </ion-header>
+  <strong class="strong_blank">User Name</strong>
+  <ion-list>
+   <ion-item>
+    <ion-input label="Text input" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <div class="div">
+    <strong class="strong_blank">Password</strong>
+  </div>
+  
+  <ion-item>
+    <ion-input label="Password input" type="password" value="password"></ion-input>
+  </ion-item>
+  <ion-button id="open-loading">Show Loading</ion-button>
+  <ion-loading class="custom-loading" trigger="open-loading" message="Loading..." duration="3000" spinner="circles"></ion-loading>
+  <style>
+    ion-list{
+      text-align: center;
+    }
+    .strong_blank{
+      text-align: left;
+      margin-left: 15px;
+    }
+    .div{
+      text-align: start;
+      margin-top: 10px;
+    }
+    ion-title{
+      margin-top: 12px;
+      font-size: medium;
+      
+    }
+  </style>
+  </ion-list>
 </ion-content>
