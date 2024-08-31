@@ -1,8 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Barberia
-    </ion-title>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Barberias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </div>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/login']">
         <ion-icon slot="icon-only" name="log-in-sharp" ion-text="Login"></ion-icon>
@@ -12,8 +26,5 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <mat-slider min="10" max="50" step="0.5">
-    <input matSliderThumb value="1.5">
-  </mat-slider>
-
+  <ion-content class="ion-padding">Presiona el menu de tu izquierda</ion-content>
 </ion-content>
