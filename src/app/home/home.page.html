@@ -1,7 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title size="medium"><h5><strong>Barberia</strong></h5>>
-    </ion-title>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Barberias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </div>
     <ion-buttons slot="end">
       <ion-button [routerLink]="['/login']">
         <ion-icon slot="icon-only" name="log-in-sharp" ion-text="Login"></ion-icon>
@@ -13,9 +28,3 @@
 <ion-content [fullscreen]="true">
   <ion-content class="ion-padding">Presiona el menu de tu izquierda</ion-content>
 </ion-content>
-
-<style>
-  ion-title{
-    margin-top: 25px;
-  }
-</style>
